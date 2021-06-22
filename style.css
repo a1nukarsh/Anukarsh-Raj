@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+::selection {
+    color: white;
+    background: black;
+  }
 
 
 .container{
@@ -38,6 +45,7 @@
 }
 .content p{
     font-size: 27px;
+    margin: 27px 0 27px 0;
 }
 
 
@@ -50,4 +58,23 @@
     text-decoration: none;
     color: black;
     padding: 12px;
+}
+
+@media screen and (max-width: 972px) {
+    .head{
+        margin: 27px 0 27px 0;
+    }
+    .subhead{
+        margin: 27px 0 27px 0;
+    }
+    .sil{
+        margin-bottom: 25px;
+    }
+    .content{
+        margin: 40px 0px 60px 0px;
+    }
+    .p-head{
+        margin: 0 0 40px 0;
+    }
+
 }
