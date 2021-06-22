@@ -13,10 +13,10 @@
 
 
 .head{
-    margin: 90px;
+    margin: 54px 240px 54px 240px;
 }
 .subhead{
-    margin: 90px;
+    margin: 54px 240px 54px 240px;
     font-size: 48px;
 }
 
@@ -26,4 +26,28 @@
 }
 .sil img{
     width: 100%;
+}
+
+
+.content{
+    margin: 80px 240px 120px 240px;
+}
+.p-head{
+    font-size: 36px;
+    margin: 0 0 80px 0;
+}
+.content p{
+    font-size: 27px;
+}
+
+
+.footer{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 189px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    padding: 12px;
 }
