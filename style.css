@@ -63,9 +63,11 @@ html{
 @media screen and (max-width: 972px) {
     .head{
         margin: 27px 0 27px 0;
+        font-size: 12px;
     }
     .subhead{
         margin: 27px 0 27px 0;
+        font-size: 27px;
     }
     .sil{
         margin-bottom: 25px;
@@ -73,8 +75,18 @@ html{
     .content{
         margin: 40px 0px 60px 0px;
     }
+    .content p{
+        font-size: 19px;
+    }
     .p-head{
         margin: 0 0 40px 0;
+        font-size: 25px;
+    }
+    .footer{
+        font-size: 27px;
+    }
+    .footer a{
+        padding: 16px;
     }
 
 }
