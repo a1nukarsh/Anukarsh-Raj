@@ -3,3 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
+
+.container{
+    /* border: 2px solid red; */
+    margin: 27px;
+    /* padding: 20px; */
+}
+
+
+.head{
+    margin: 90px;
+}
+.subhead{
+    margin: 90px;
+    font-size: 48px;
+}
+
+
+.sil{
+    margin-bottom: 50px;
+}
+.sil img{
+    width: 100%;
+}
