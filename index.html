@@ -9,8 +9,9 @@
     <meta property="og:description" content="Hi I'm Anukarsh Raj.
     I am a versatile web developer with a focus on performance and ease of use.">
     <link rel="icon" href="./593.png" type="image/icon type">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./dark.css">
+    <link id="theme-style" rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="stylesheet" href="./dark.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e15f06075f.js" crossorigin="anonymous"></script>
@@ -88,6 +89,25 @@
             <a href="https://twitter.com/AnukarshRaj" target="_blank"><i class="fa fa-twitter-square"></i></a>
         </div>
     </div>
+
+    <script>
+  function setTheme() {
+    const themeLink = document.getElementById("theme-style");
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (isDark) {
+      themeLink.href = "./dark.css"; // dark mode stylesheet
+    } else {
+      themeLink.href = "./style.css"; // light mode stylesheet
+    }
+  }
+
+  // Run on page load
+  setTheme();
+
+  // Listen for system theme changes
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", setTheme);
+</script>
 
 </body>
 
