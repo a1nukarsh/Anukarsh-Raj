@@ -15,6 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e15f06075f.js" crossorigin="anonymous"></script>
+    <script>
+  function setTheme() {
+    const themeLink = document.getElementById("theme-style");
+    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (isDark) {
+      themeLink.href = "./dark.css"; // dark mode stylesheet
+    } else {
+      themeLink.href = "./style.css"; // light mode stylesheet
+    }
+  }
+
+  // Run on page load
+  setTheme();
+
+  // Listen for system theme changes
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", setTheme);
+</script>
 
 </head>
 
@@ -90,24 +108,7 @@
         </div>
     </div>
 
-    <script>
-  function setTheme() {
-    const themeLink = document.getElementById("theme-style");
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    if (isDark) {
-      themeLink.href = "./dark.css"; // dark mode stylesheet
-    } else {
-      themeLink.href = "./style.css"; // light mode stylesheet
-    }
-  }
-
-  // Run on page load
-  setTheme();
-
-  // Listen for system theme changes
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", setTheme);
-</script>
+    
 
 </body>
 
